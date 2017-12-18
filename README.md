@@ -25,7 +25,7 @@ First, clone the Tangobot respository:
 ```
 mkdir -p ~/tangobot_ws/src
 cd ~/tangobot_ws/src
-git clone https://github.com/ekumenlabs/tangobot
+git clone git@github.com:ysfAskri/tangobot.git
 ```
 
 Then, install the package dependencies in case you don't have them, and source the environment:
@@ -35,6 +35,13 @@ source /opt/ros/kinetic/setup.bash
 rosdep update
 rosdep install --from-paths src/tangobot/tangobot_desktop
 catkin_make --pkg tangobot_desktop
+```
+if you have: ```ImportError: "from catkin_pkg.package import parse_package" failed: No module named 'catkin_pkg'```
+set:
+```pip install catkin_pkg```
+
+```
+source ~/tangobot_ws/devel/setup.bash
 ```
 
 Connect your device to your robot base using a "USB on the go" cable. The device's main camera should have the same direction of the robot's front. You can check the robot's wiki article for more information about the [hardware setup](http://wiki.ros.org/tangobot/tutorials/kinetic/hardware%20setup) and how to place the Android device over the robot.
