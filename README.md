@@ -25,7 +25,7 @@ First, clone the Tangobot respository:
 ```
 mkdir -p ~/tangobot_ws/src
 cd ~/tangobot_ws/src
-git clone https://github.com/ekumenlabs/tangobot
+git clone git@github.com:ysfAskri/tangobot.git
 ```
 
 Then, install the package dependencies in case you don't have them, and source the environment:
