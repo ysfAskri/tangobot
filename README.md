@@ -36,11 +36,7 @@ rosdep update
 rosdep install --from-paths src/tangobot/tangobot_desktop
 catkin_make --pkg tangobot_desktop
 ```
-if you have: 
-```
-ImportError: "from catkin_pkg.package import parse_package" failed: No module named 'catkin_pkg'
-
-```
+if you have: ```ImportError: "from catkin_pkg.package import parse_package" failed: No module named 'catkin_pkg'```
 set:
 ```pip install catkin_pkg```
 
